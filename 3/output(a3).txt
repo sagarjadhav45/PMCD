@@ -1,0 +1,35 @@
+[student@localhost exp3]$ yacc -d a3.y
+[student@localhost exp3]$ lex a3.l
+[student@localhost exp3]$ gcc y.tab.c lex.yy.c -lm
+[student@localhost exp3]$ ./a.out
+
+Enter expression:a=(a+b)*(d-c)/(f+g);
+
+
+	 Three Address Code
+
+B :=	a	+	b	
+C :=	d	-	c	
+D :=	f	+	g	
+E :=	C	/	D	
+F :=	B	*	E	
+G :=	a	=	F	
+
+
+	Quadraple
+
+ID Operator Operand1 Operand2 Result
+
+(0)	+	a	b	B	
+
+(1)	-	d	c	C	
+
+(2)	+	f	g	D	
+
+(3)	/	C	D	E	
+
+(4)	*	B	E	F	
+
+(5)	=	a	F	G	
+[student@localhost exp3]$ 
+

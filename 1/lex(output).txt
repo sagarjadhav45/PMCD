@@ -1,0 +1,38 @@
+student@student-X55C:~$ lex tokens1.l
+student@student-X55C:~$ gcc lex.yy.c
+student@student-X55C:~$ ./a.out<a.c
+
+Preprocessor is::#
+Keyword::include
+Relational Operator is::<
+Header file is::stdio.h
+Relational Operator is::>
+
+Keyword::void 
+Keyword::main
+
+Punctuation is::{
+
+Keyword::float 
+Identifier :g
+Punctuation is::;
+
+Keyword::char 
+Identifier :s
+Punctuation is::;
+
+Keyword::printf
+Punctuation is::(
+Punctuation is::"
+Format Specifier::%d
+Punctuation is::"
+Punctuation is::)
+Punctuation is::;
+
+Punctuation is::}
+
+ID	 NAME 		 TYPE 			 SIZE
+0 	 g		 float 		 4
+1 	 s		 char 		 1
+student@student-X55C:~$ 
+

@@ -1,0 +1,52 @@
+[student@localhost ~]$ cd avi
+[student@localhost avi]$ yacc -d l.y
+[student@localhost avi]$ lex l.l
+[student@localhost avi]$ gcc y.tab.c lex.yy.c -lm
+[student@localhost avi]$ ./a.out
+Enter the Expression 
+3+5
+Value is:8.000000 
+2+1
+Value is:3.000000 
+4*7
+Value is:28.000000 
+1*6
+Value is:6.000000 
+25/5
+Value is:5.000000 
+13/2
+Value is:6.500000 
+4-1
+Value is:3.000000 
+1-2
+Value is:-1.000000 
+sin(30)
+Value is:0.500059 
+sin(60)
+Value is:0.866093 
+cos(30)
+Value is:0.865991 
+cos(60)
+Value is:0.499882 
+tan(45) 
+Value is:1.000204 
+log(10)
+Value is:2.302585 
+log(0)
+Value is:-inf 
+log(20)
+Value is:2.995732 
+sqrt(25)
+Value is:5.000000 
+sqrt(100)
+Value is:10.000000 
+log(16)
+Value is:2.772589 
+~10
+Value is:-10.000000 
+~122
+Value is:-122.000000 
+d-9
+syntax error
+d[student@localhost avi]$ 
+
